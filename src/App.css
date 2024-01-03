@@ -1,0 +1,44 @@
+.parent {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: flex-end;
+  height: 80vh;
+  margin-bottom: 40px;
+  margin: 30px;
+  align-items: flex-end;
+}
+
+.child {
+  width: 100%;
+  max-width: 400px; 
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #61dafb;
+}
+
+.inputt {
+  height: 20px;
+  margin-bottom: 10px;
+  width: 100%; 
+  max-width: 300px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .parent {
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 5rem; 
+  }
+
+  .child {
+    margin: 10px; 
+  }
+
+  .inputt {
+    width: 100%; /* Make the input width full-width on smaller screens */
+    max-width: none; /* Remove max-width on smaller screens */
+  }
+}
